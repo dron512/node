@@ -1,0 +1,569 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 7ms
+6 timing config:load:builtin Completed in 7ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/home/ubuntu/node/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/home/ubuntu/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 2ms
+16 timing config:load Completed in 19ms
+17 timing npm:load:configload Completed in 19ms
+18 timing npm:load:mkdirpcache Completed in 2ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm i cors
+21 verbose argv "i" "cors"
+22 timing npm:load:setTitle Completed in 3ms
+23 timing config:load:flatten Completed in 8ms
+24 timing npm:load:display Completed in 10ms
+25 verbose logfile logs-max:10 dir:/home/ubuntu/.npm/_logs/2025-01-12T04_31_00_897Z-
+26 verbose logfile /home/ubuntu/.npm/_logs/2025-01-12T04_31_00_897Z-debug-0.log
+27 timing npm:load:logFile Completed in 9ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 43ms
+31 silly logfile done cleaning log files
+32 timing config:load:flatten Completed in 1ms
+33 timing arborist:ctor Completed in 1ms
+34 timing idealTree:init Completed in 351ms
+35 timing idealTree:userRequests Completed in 1ms
+36 silly idealTree buildDeps
+37 silly fetch manifest cors@*
+38 timing arborist:ctor Completed in 1ms
+39 http fetch GET 200 https://registry.npmjs.org/cors 429ms (cache miss)
+40 silly placeDep ROOT cors@2.8.5 OK for: ex01@1.0.0 want: *
+41 timing idealTree:#root Completed in 444ms
+42 timing idealTree:node_modules/cors Completed in 0ms
+43 timing idealTree:buildDeps Completed in 445ms
+44 timing idealTree:fixDepFlags Completed in 11ms
+45 timing idealTree Completed in 828ms
+46 timing reify:loadTrees Completed in 830ms
+47 timing reify:diffTrees Completed in 8ms
+48 silly reify moves {}
+49 timing reify:retireShallow Completed in 2ms
+50 timing reify:createSparse Completed in 8ms
+51 timing reify:loadBundles Completed in 0ms
+52 silly audit bulk request {
+52 silly audit   '@apidevtools/json-schema-ref-parser': [ '9.1.2' ],
+52 silly audit   '@apidevtools/openapi-schemas': [ '2.1.0' ],
+52 silly audit   '@apidevtools/swagger-methods': [ '3.0.2' ],
+52 silly audit   '@apidevtools/swagger-parser': [ '10.0.3' ],
+52 silly audit   '@cspotcode/source-map-support': [ '0.8.1' ],
+52 silly audit   '@edge-runtime/format': [ '2.2.1' ],
+52 silly audit   '@edge-runtime/node-utils': [ '2.3.0' ],
+52 silly audit   '@edge-runtime/ponyfill': [ '2.4.2' ],
+52 silly audit   '@edge-runtime/primitives': [ '4.1.0' ],
+52 silly audit   '@edge-runtime/vm': [ '3.2.0' ],
+52 silly audit   '@fastify/busboy': [ '2.1.1' ],
+52 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+52 silly audit   '@isaacs/fs-minipass': [ '4.0.1' ],
+52 silly audit   minipass: [ '7.1.2', '2.9.0' ],
+52 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+52 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.0' ],
+52 silly audit   '@jridgewell/trace-mapping': [ '0.3.9' ],
+52 silly audit   '@jsdevtools/ono': [ '7.1.3' ],
+52 silly audit   '@mapbox/node-pre-gyp': [ '2.0.0-rc.0' ],
+52 silly audit   chownr: [ '3.0.0', '1.1.4' ],
+52 silly audit   minizlib: [ '3.0.1', '1.3.3' ],
+52 silly audit   mkdirp: [ '3.0.1', '1.0.4', '0.5.6' ],
+52 silly audit   tar: [ '7.4.3', '4.4.18' ],
+52 silly audit   yallist: [ '5.0.0', '4.0.0', '3.1.1' ],
+52 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+52 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+52 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+52 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+52 silly audit   '@rollup/pluginutils': [ '5.1.4' ],
+52 silly audit   picomatch: [ '4.0.2', '2.3.1' ],
+52 silly audit   '@scarf/scarf': [ '1.4.0' ],
+52 silly audit   '@sinclair/typebox': [ '0.25.24' ],
+52 silly audit   '@tootallnate/once': [ '2.0.0' ],
+52 silly audit   '@ts-morph/common': [ '0.11.1' ],
+52 silly audit   '@tsconfig/node10': [ '1.0.11' ],
+52 silly audit   '@tsconfig/node12': [ '1.0.11' ],
+52 silly audit   '@tsconfig/node14': [ '1.0.3' ],
+52 silly audit   '@tsconfig/node16': [ '1.0.4' ],
+52 silly audit   '@types/estree': [ '1.0.6' ],
+52 silly audit   '@types/json-schema': [ '7.0.15' ],
+52 silly audit   '@types/node': [ '16.18.11' ],
+52 silly audit   '@vercel/build-utils': [ '9.0.1' ],
+52 silly audit   '@vercel/error-utils': [ '2.0.3' ],
+52 silly audit   '@vercel/fun': [ '1.1.2' ],
+52 silly audit   debug: [ '4.3.4', '2.6.9', '4.4.0' ],
+52 silly audit   ms: [ '2.1.2', '2.1.1', '2.1.3', '2.0.0' ],
+52 silly audit   semver: [ '7.5.4', '6.3.1', '7.6.3' ],
+52 silly audit   '@vercel/gatsby-plugin-vercel-analytics': [ '1.0.11' ],
+52 silly audit   '@vercel/gatsby-plugin-vercel-builder': [ '2.0.63' ],
+52 silly audit   'fs-extra': [ '11.1.0', '8.1.0' ],
+52 silly audit   jsonfile: [ '6.1.0', '4.0.0' ],
+52 silly audit   universalify: [ '2.0.1', '0.1.2' ],
+52 silly audit   '@vercel/go': [ '3.2.1' ],
+52 silly audit   '@vercel/hydrogen': [ '1.0.11' ],
+52 silly audit   '@vercel/next': [ '4.4.2' ],
+52 silly audit   '@vercel/nft': [ '0.27.10' ],
+52 silly audit   '@vercel/node': [ '5.0.2' ],
+52 silly audit   'async-listen': [ '3.0.0', '1.2.0', '3.0.1' ],
+52 silly audit   'node-fetch': [ '2.6.9', '2.6.7' ],
+52 silly audit   'path-to-regexp': [ '6.2.1', '6.1.0', '1.9.0', '0.1.12' ],
+52 silly audit   '@vercel/python': [ '4.6.0' ],
+52 silly audit   '@vercel/redwood': [ '2.1.12' ],
+52 silly audit   '@vercel/remix-builder': [ '5.0.2' ],
+52 silly audit   '@vercel/routing-utils': [ '5.0.0' ],
+52 silly audit   '@vercel/ruby': [ '2.1.0' ],
+52 silly audit   '@vercel/static-build': [ '2.5.41' ],
+52 silly audit   '@vercel/static-config': [ '3.0.0' ],
+52 silly audit   ajv: [ '8.6.3', '6.12.6' ],
+52 silly audit   'json-schema-traverse': [ '1.0.0', '0.4.1' ],
+52 silly audit   abbrev: [ '2.0.0' ],
+52 silly audit   accepts: [ '1.3.8' ],
+52 silly audit   acorn: [ '8.14.0' ],
+52 silly audit   'acorn-import-attributes': [ '1.9.5' ],
+52 silly audit   'acorn-walk': [ '8.3.4' ],
+52 silly audit   'agent-base': [ '7.1.3' ],
+52 silly audit   'ansi-regex': [ '6.1.0', '5.0.1' ],
+52 silly audit   'ansi-styles': [ '6.2.1', '4.3.0' ],
+52 silly audit   'any-promise': [ '1.3.0' ],
+52 silly audit   anymatch: [ '3.1.3' ],
+52 silly audit   'append-field': [ '1.0.0' ],
+52 silly audit   arg: [ '4.1.0' ],
+52 silly audit   argparse: [ '2.0.1' ],
+52 silly audit   'array-flatten': [ '1.1.1' ],
+52 silly audit   'async-sema': [ '3.1.1' ],
+52 silly audit   'balanced-match': [ '1.0.2' ],
+52 silly audit   'binary-extensions': [ '2.3.0' ],
+52 silly audit   bindings: [ '1.5.0' ],
+52 silly audit   'body-parser': [ '1.20.3' ],
+52 silly audit   'brace-expansion': [ '1.1.11', '2.0.1' ],
+52 silly audit   braces: [ '3.0.3' ],
+52 silly audit   'buffer-crc32': [ '0.2.13' ],
+52 silly audit   'buffer-from': [ '1.1.2' ],
+52 silly audit   busboy: [ '1.6.0' ],
+52 silly audit   bytes: [ '3.1.2', '3.1.0' ],
+52 silly audit   'call-bind-apply-helpers': [ '1.0.1' ],
+52 silly audit   'call-bound': [ '1.0.3' ],
+52 silly audit   'call-me-maybe': [ '1.0.2' ],
+52 silly audit   chokidar: [ '3.6.0', '4.0.0' ],
+52 silly audit   'cjs-module-lexer': [ '1.2.3' ],
+52 silly audit   'code-block-writer': [ '10.1.1' ],
+52 silly audit   'color-convert': [ '2.0.1' ],
+52 silly audit   'color-name': [ '1.1.4' ],
+52 silly audit   commander: [ '6.2.0', '9.5.0' ],
+52 silly audit   'concat-map': [ '0.0.1' ],
+52 silly audit   'concat-stream': [ '1.6.2' ],
+52 silly audit   consola: [ '3.3.3' ],
+52 silly audit   'content-disposition': [ '0.5.4' ],
+52 silly audit   'content-type': [ '1.0.5', '1.0.4' ],
+52 silly audit   'convert-hrtime': [ '3.0.0' ],
+52 silly audit   cookie: [ '0.7.1' ],
+52 silly audit   'cookie-signature': [ '1.0.6' ],
+52 silly audit   'core-util-is': [ '1.0.3' ],
+52 silly audit   'create-require': [ '1.1.1' ],
+52 silly audit   'cross-spawn': [ '7.0.6' ],
+52 silly audit   depd: [ '2.0.0', '1.1.2' ],
+52 silly audit   destroy: [ '1.2.0' ],
+52 silly audit   'detect-libc': [ '2.0.3' ],
+52 silly audit   diff: [ '4.0.2' ],
+52 silly audit   doctrine: [ '3.0.0' ],
+52 silly audit   'dunder-proto': [ '1.0.1' ],
+52 silly audit   eastasianwidth: [ '0.2.0' ],
+52 silly audit   'edge-runtime': [ '2.5.9' ],
+52 silly audit   'ee-first': [ '1.1.1' ],
+52 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+52 silly audit   encodeurl: [ '2.0.0', '1.0.2' ],
+52 silly audit   'end-of-stream': [ '1.4.4', '1.1.0' ],
+52 silly audit   'es-define-property': [ '1.0.1' ],
+52 silly audit   'es-errors': [ '1.3.0' ],
+52 silly audit   'es-module-lexer': [ '1.4.1' ],
+52 silly audit   'es-object-atoms': [ '1.0.0' ],
+52 silly audit   esbuild: [ '0.14.47' ],
+52 silly audit   'esbuild-android-64': [ '0.14.47' ],
+52 silly audit   'esbuild-android-arm64': [ '0.14.47' ],
+52 silly audit   'esbuild-darwin-64': [ '0.14.47' ],
+52 silly audit   'esbuild-darwin-arm64': [ '0.14.47' ],
+52 silly audit   'esbuild-freebsd-64': [ '0.14.47' ],
+52 silly audit   'esbuild-freebsd-arm64': [ '0.14.47' ],
+52 silly audit   'esbuild-linux-32': [ '0.14.47' ],
+52 silly audit   'esbuild-linux-64': [ '0.14.47' ],
+52 silly audit   'esbuild-linux-arm': [ '0.14.47' ],
+52 silly audit   'esbuild-linux-arm64': [ '0.14.47' ],
+52 silly audit   'esbuild-linux-mips64le': [ '0.14.47' ],
+52 silly audit   'esbuild-linux-ppc64le': [ '0.14.47' ],
+52 silly audit   'esbuild-linux-riscv64': [ '0.14.47' ],
+52 silly audit   'esbuild-linux-s390x': [ '0.14.47' ],
+52 silly audit   'esbuild-netbsd-64': [ '0.14.47' ],
+52 silly audit   'esbuild-openbsd-64': [ '0.14.47' ],
+52 silly audit   'esbuild-sunos-64': [ '0.14.47' ],
+52 silly audit   'esbuild-windows-32': [ '0.14.47' ],
+52 silly audit   'esbuild-windows-64': [ '0.14.47' ],
+52 silly audit   'esbuild-windows-arm64': [ '0.14.47' ],
+52 silly audit   'escape-html': [ '1.0.3' ],
+52 silly audit   'estree-walker': [ '2.0.2' ],
+52 silly audit   esutils: [ '2.0.3' ],
+52 silly audit   etag: [ '1.8.1' ],
+52 silly audit   'events-intercept': [ '2.0.0' ],
+52 silly audit   execa: [ '3.2.0' ],
+52 silly audit   'signal-exit': [ '3.0.7', '4.0.2' ],
+52 silly audit   express: [ '4.21.2' ],
+52 silly audit   'fast-deep-equal': [ '3.1.3' ],
+52 silly audit   'fast-glob': [ '3.3.3' ],
+52 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+52 silly audit   fastq: [ '1.18.0' ],
+52 silly audit   'fd-slicer': [ '1.1.0' ],
+52 silly audit   'file-uri-to-path': [ '1.0.0' ],
+52 silly audit   'fill-range': [ '7.1.1' ],
+52 silly audit   finalhandler: [ '1.3.1' ],
+52 silly audit   'foreground-child': [ '3.3.0' ],
+52 silly audit   forwarded: [ '0.2.0' ],
+52 silly audit   fresh: [ '0.5.2' ],
+52 silly audit   'fs-minipass': [ '1.2.7' ],
+52 silly audit   'fs.realpath': [ '1.0.0' ],
+52 silly audit   fsevents: [ '2.3.3' ],
+52 silly audit   'function-bind': [ '1.1.2' ],
+52 silly audit   'generic-pool': [ '3.4.2' ],
+52 silly audit   'get-intrinsic': [ '1.2.7' ],
+52 silly audit   'get-proto': [ '1.0.1' ],
+52 silly audit   'get-stream': [ '5.2.0' ],
+52 silly audit   glob: [ '7.1.6', '10.4.5' ],
+52 silly audit   'glob-parent': [ '5.1.2' ],
+52 silly audit   gopd: [ '1.2.0' ],
+52 silly audit   'graceful-fs': [ '4.2.11' ],
+52 silly audit   'has-flag': [ '3.0.0' ],
+52 silly audit   'has-symbols': [ '1.1.0' ],
+52 silly audit   hasown: [ '2.0.2' ],
+52 silly audit   'http-errors': [ '2.0.0', '1.7.3', '1.4.0' ],
+52 silly audit   'https-proxy-agent': [ '7.0.6' ],
+52 silly audit   'human-signals': [ '1.1.1' ],
+52 silly audit   'iconv-lite': [ '0.4.24' ],
+52 silly audit   'ignore-by-default': [ '1.0.1' ],
+52 silly audit   inflight: [ '1.0.6' ],
+52 silly audit   inherits: [ '2.0.4', '2.0.1', '2.0.3' ],
+52 silly audit   'ipaddr.js': [ '1.9.1' ],
+52 silly audit   'is-binary-path': [ '2.1.0' ],
+52 silly audit   'is-extglob': [ '2.1.1' ],
+52 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+52 silly audit   'is-glob': [ '4.0.3' ],
+52 silly audit   'is-number': [ '7.0.0' ],
+52 silly audit   'is-stream': [ '2.0.1' ],
+52 silly audit   isarray: [ '1.0.0', '0.0.1' ],
+52 silly audit   isexe: [ '2.0.0' ],
+52 silly audit   jackspeak: [ '3.4.3' ],
+52 silly audit   'js-yaml': [ '4.1.0' ],
+52 silly audit   'json-schema-to-ts': [ '1.6.4' ],
+52 silly audit   'lodash.get': [ '4.4.2' ],
+52 silly audit   'lodash.isequal': [ '4.5.0' ],
+52 silly audit   'lodash.mergewith': [ '4.6.2' ],
+52 silly audit   'lru-cache': [ '6.0.0', '10.4.3' ],
+52 silly audit   'make-error': [ '1.3.6' ],
+52 silly audit   'math-intrinsics': [ '1.1.0' ],
+52 silly audit   'media-typer': [ '0.3.0' ],
+52 silly audit   'merge-descriptors': [ '1.0.3' ],
+52 silly audit   'merge-stream': [ '2.0.0' ],
+52 silly audit   merge2: [ '1.4.1' ],
+52 silly audit   methods: [ '1.1.2' ],
+52 silly audit   micro: [ '9.3.5-canary.3' ],
+52 silly audit   'raw-body': [ '2.4.1', '2.5.2' ],
+52 silly audit   setprototypeof: [ '1.1.1', '1.2.0' ],
+52 silly audit   statuses: [ '1.5.0', '2.0.1' ],
+52 silly audit   toidentifier: [ '1.0.0', '1.0.1' ],
+52 silly audit   micromatch: [ '4.0.8' ],
+52 silly audit   mime: [ '1.6.0' ],
+52 silly audit   'mime-db': [ '1.52.0' ],
+52 silly audit   'mime-types': [ '2.1.35' ],
+52 silly audit   'mimic-fn': [ '2.1.0' ],
+52 silly audit   minimatch: [ '3.1.2', '9.0.5' ],
+52 silly audit   minimist: [ '1.2.8' ],
+52 silly audit   mri: [ '1.2.0' ],
+52 silly audit   multer: [ '1.4.5-lts.1' ],
+52 silly audit   negotiator: [ '0.6.3' ],
+52 silly audit   'node-gyp-build': [ '4.8.4' ],
+52 silly audit   nodemon: [ '3.1.9' ],
+52 silly audit   nopt: [ '8.0.0' ],
+52 silly audit   'normalize-path': [ '3.0.0' ],
+52 silly audit   'npm-run-path': [ '4.0.1' ],
+52 silly audit   'object-assign': [ '4.1.1' ],
+52 silly audit   'object-inspect': [ '1.13.3' ],
+52 silly audit   'on-finished': [ '2.4.1' ],
+52 silly audit   once: [ '1.4.0', '1.3.3' ],
+52 silly audit   onetime: [ '5.1.2' ],
+52 silly audit   'openapi-types': [ '12.1.3' ],
+52 silly audit   'os-paths': [ '4.4.0' ],
+52 silly audit   'p-finally': [ '2.0.1' ],
+52 silly audit   'package-json-from-dist': [ '1.0.1' ],
+52 silly audit   'parse-ms': [ '2.1.0' ],
+52 silly audit   parseurl: [ '1.3.3' ],
+52 silly audit   path: [ '0.12.7' ],
+52 silly audit   'path-browserify': [ '1.0.1' ],
+52 silly audit   'path-is-absolute': [ '1.0.1' ],
+52 silly audit   'path-key': [ '3.1.1' ],
+52 silly audit   'path-match': [ '1.2.4' ],
+52 silly audit   'path-scurry': [ '1.11.1' ],
+52 silly audit   pend: [ '1.2.0' ],
+52 silly audit   picocolors: [ '1.0.0' ],
+52 silly audit   'pretty-ms': [ '7.0.1' ],
+52 silly audit   process: [ '0.11.10' ],
+52 silly audit   'process-nextick-args': [ '2.0.1' ],
+52 silly audit   promisepipe: [ '3.0.0' ],
+52 silly audit   'proxy-addr': [ '2.0.7' ],
+52 silly audit   'pstree.remy': [ '1.1.8' ],
+52 silly audit   pump: [ '3.0.2' ],
+52 silly audit   punycode: [ '2.3.1' ],
+52 silly audit   qs: [ '6.13.0' ],
+52 silly audit   'queue-microtask': [ '1.2.3' ],
+52 silly audit   'range-parser': [ '1.2.1' ],
+52 silly audit   'readable-stream': [ '2.3.8' ],
+52 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+52 silly audit   readdirp: [ '3.6.0', '4.1.1' ],
+52 silly audit   'require-from-string': [ '2.0.2' ],
+52 silly audit   'resolve-from': [ '5.0.0' ],
+52 silly audit   reusify: [ '1.0.4' ],
+52 silly audit   rimraf: [ '5.0.10' ],
+52 silly audit   'run-parallel': [ '1.2.0' ],
+52 silly audit   'safer-buffer': [ '2.1.2' ],
+52 silly audit   send: [ '0.19.0' ],
+52 silly audit   'serve-static': [ '1.16.2' ],
+52 silly audit   'shebang-command': [ '2.0.0' ],
+52 silly audit   'shebang-regex': [ '3.0.0' ],
+52 silly audit   'side-channel': [ '1.1.0' ],
+52 silly audit   'side-channel-list': [ '1.0.0' ],
+52 silly audit   'side-channel-map': [ '1.0.1' ],
+52 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+52 silly audit   'simple-update-notifier': [ '2.0.0' ],
+52 silly audit   'stat-mode': [ '0.3.0' ],
+52 silly audit   'stream-to-array': [ '2.3.0' ],
+52 silly audit   'stream-to-promise': [ '2.2.0' ],
+52 silly audit   streamsearch: [ '1.1.0' ],
+52 silly audit   string_decoder: [ '1.1.1' ],
+52 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+52 silly audit   'strip-ansi': [ '6.0.1', '7.1.0' ],
+52 silly audit   'strip-final-newline': [ '2.0.0' ],
+52 silly audit   'supports-color': [ '5.5.0' ],
+52 silly audit   'swagger-jsdoc': [ '6.2.8' ],
+52 silly audit   'swagger-parser': [ '10.0.3' ],
+52 silly audit   'swagger-ui-dist': [ '5.18.2' ],
+52 silly audit   'swagger-ui-express': [ '5.0.1' ],
+52 silly audit   'time-span': [ '4.0.0' ],
+52 silly audit   'to-regex-range': [ '5.0.1' ],
+52 silly audit   touch: [ '3.1.1' ],
+52 silly audit   tr46: [ '0.0.3' ],
+52 silly audit   'tree-kill': [ '1.2.2' ],
+52 silly audit   'ts-morph': [ '12.0.0' ],
+52 silly audit   'ts-node': [ '10.9.1' ],
+52 silly audit   'ts-toolbelt': [ '6.15.5' ],
+52 silly audit   'type-is': [ '1.6.18' ],
+52 silly audit   typedarray: [ '0.0.6' ],
+52 silly audit   typescript: [ '4.9.5' ],
+52 silly audit   'uid-promise': [ '1.0.0' ],
+52 silly audit   undefsafe: [ '2.0.5' ],
+52 silly audit   undici: [ '5.28.4' ],
+52 silly audit   unpipe: [ '1.0.0' ],
+52 silly audit   'uri-js': [ '4.4.1' ],
+52 silly audit   util: [ '0.10.4' ],
+52 silly audit   'util-deprecate': [ '1.0.2' ],
+52 silly audit   'utils-merge': [ '1.0.1' ],
+52 silly audit   uuid: [ '3.3.2' ],
+52 silly audit   'v8-compile-cache-lib': [ '3.0.1' ],
+52 silly audit   validator: [ '13.12.0' ],
+52 silly audit   vary: [ '1.1.2' ],
+52 silly audit   vercel: [ '39.2.6' ],
+52 silly audit   'web-vitals': [ '0.2.4' ],
+52 silly audit   'webidl-conversions': [ '3.0.1' ],
+52 silly audit   'whatwg-url': [ '5.0.0' ],
+52 silly audit   which: [ '2.0.2' ],
+52 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+52 silly audit   wrappy: [ '1.0.2' ],
+52 silly audit   'xdg-app-paths': [ '5.1.0' ],
+52 silly audit   'xdg-portable': [ '7.3.0' ],
+52 silly audit   xtend: [ '4.0.2' ],
+52 silly audit   yaml: [ '2.0.0-1' ],
+52 silly audit   yauzl: [ '2.10.0' ],
+52 silly audit   'yauzl-clone': [ '1.0.4' ],
+52 silly audit   'yauzl-promise': [ '2.1.3' ],
+52 silly audit   yn: [ '3.1.1' ],
+52 silly audit   'z-schema': [ '5.0.5' ],
+52 silly audit   cors: [ '2.8.5' ]
+52 silly audit }
+53 verbose reify failed optional dependency /home/ubuntu/node/node_modules/fsevents
+54 silly reify mark deleted [ '/home/ubuntu/node/node_modules/fsevents' ]
+55 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-windows-arm64
+56 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-windows-arm64' ]
+57 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-windows-64
+58 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-windows-64' ]
+59 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-windows-32
+60 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-windows-32' ]
+61 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-sunos-64
+62 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-sunos-64' ]
+63 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-openbsd-64
+64 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-openbsd-64' ]
+65 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-netbsd-64
+66 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-netbsd-64' ]
+67 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-linux-s390x
+68 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-linux-s390x' ]
+69 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-linux-riscv64
+70 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-linux-riscv64' ]
+71 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-linux-ppc64le
+72 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-linux-ppc64le' ]
+73 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-linux-mips64le
+74 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-linux-mips64le' ]
+75 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-linux-arm64
+76 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-linux-arm64' ]
+77 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-linux-arm
+78 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-linux-arm' ]
+79 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-linux-32
+80 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-linux-32' ]
+81 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-freebsd-arm64
+82 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-freebsd-arm64' ]
+83 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-freebsd-64
+84 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-freebsd-64' ]
+85 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-darwin-arm64
+86 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-darwin-arm64' ]
+87 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-darwin-64
+88 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-darwin-64' ]
+89 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-android-arm64
+90 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-android-arm64' ]
+91 verbose reify failed optional dependency /home/ubuntu/node/node_modules/esbuild-android-64
+92 silly reify mark deleted [ '/home/ubuntu/node/node_modules/esbuild-android-64' ]
+93 timing reifyNode:node_modules/fsevents Completed in 13ms
+94 timing reifyNode:node_modules/esbuild-windows-arm64 Completed in 13ms
+95 timing reifyNode:node_modules/esbuild-windows-64 Completed in 13ms
+96 timing reifyNode:node_modules/esbuild-windows-32 Completed in 12ms
+97 timing reifyNode:node_modules/esbuild-sunos-64 Completed in 12ms
+98 timing reifyNode:node_modules/esbuild-openbsd-64 Completed in 12ms
+99 timing reifyNode:node_modules/esbuild-netbsd-64 Completed in 12ms
+100 timing reifyNode:node_modules/esbuild-linux-s390x Completed in 12ms
+101 timing reifyNode:node_modules/esbuild-linux-riscv64 Completed in 12ms
+102 timing reifyNode:node_modules/esbuild-linux-ppc64le Completed in 11ms
+103 timing reifyNode:node_modules/esbuild-linux-mips64le Completed in 11ms
+104 timing reifyNode:node_modules/esbuild-linux-arm64 Completed in 11ms
+105 timing reifyNode:node_modules/esbuild-linux-arm Completed in 11ms
+106 timing reifyNode:node_modules/esbuild-linux-32 Completed in 11ms
+107 timing reifyNode:node_modules/esbuild-freebsd-arm64 Completed in 11ms
+108 timing reifyNode:node_modules/esbuild-freebsd-64 Completed in 11ms
+109 timing reifyNode:node_modules/esbuild-darwin-arm64 Completed in 11ms
+110 timing reifyNode:node_modules/esbuild-darwin-64 Completed in 11ms
+111 timing reifyNode:node_modules/esbuild-android-arm64 Completed in 11ms
+112 timing reifyNode:node_modules/esbuild-android-64 Completed in 10ms
+113 silly tarball no local data for cors@https://registry.npmjs.org/cors/-/cors-2.8.5.tgz. Extracting by manifest.
+114 http fetch GET 200 https://registry.npmjs.org/cors/-/cors-2.8.5.tgz 72ms (cache miss)
+115 timing reifyNode:node_modules/cors Completed in 95ms
+116 timing reify:unpack Completed in 95ms
+117 timing reify:unretire Completed in 0ms
+118 timing build:queue Completed in 3ms
+119 timing build:deps Completed in 4ms
+120 timing build Completed in 4ms
+121 timing reify:build Completed in 5ms
+122 timing reify:trash Completed in 2ms
+123 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 235ms
+124 timing auditReport:getReport Completed in 247ms
+125 silly audit report {
+125 silly audit report   tar: [
+125 silly audit report     {
+125 silly audit report       id: 1097493,
+125 silly audit report       url: 'https://github.com/advisories/GHSA-f5x3-32g6-xq36',
+125 silly audit report       title: 'Denial of service while parsing a tar file due to lack of folders count validation',
+125 silly audit report       severity: 'moderate',
+125 silly audit report       vulnerable_versions: '<6.2.1',
+125 silly audit report       cwe: [Array],
+125 silly audit report       cvss: [Object]
+125 silly audit report     }
+125 silly audit report   ],
+125 silly audit report   'path-to-regexp': [
+125 silly audit report     {
+125 silly audit report       id: 1099558,
+125 silly audit report       url: 'https://github.com/advisories/GHSA-9wv6-86v2-598j',
+125 silly audit report       title: 'path-to-regexp outputs backtracking regular expressions',
+125 silly audit report       severity: 'high',
+125 silly audit report       vulnerable_versions: '>=4.0.0 <6.3.0',
+125 silly audit report       cwe: [Array],
+125 silly audit report       cvss: [Object]
+125 silly audit report     }
+125 silly audit report   ]
+125 silly audit report }
+126 timing reify:save Completed in 134ms
+127 timing metavuln:cache:get:security-advisory:tar:xsfciMtNhQn+Vb692L8h5HEYBYUJ5Lhjy3bF//LOsKSn8tp0f1hbuDX26k9UtKJNPZjM5uuq2Cxlz3KwL19oJg== Completed in 55ms
+128 timing metavuln:cache:get:security-advisory:path-to-regexp:pLUv/6c+bmHoxEACs0NqtwPmGr+fsz6hhPRCaCxAB7JAEWbfJpZAdRp5wZbakunJd3L0DjKZw9zV2WchUplIJA== Completed in 55ms
+129 http fetch GET 200 https://registry.npmjs.org/path-to-regexp 106ms (cache updated)
+130 timing metavuln:packument:path-to-regexp Completed in 110ms
+131 timing metavuln:load:security-advisory:path-to-regexp:1099558 Completed in 2ms
+132 timing metavuln:calculate:security-advisory:path-to-regexp:1099558 Completed in 112ms
+133 http fetch GET 200 https://registry.npmjs.org/tar 114ms (cache updated)
+134 timing metavuln:packument:tar Completed in 116ms
+135 timing metavuln:load:security-advisory:tar:1097493 Completed in 4ms
+136 timing metavuln:calculate:security-advisory:tar:1097493 Completed in 122ms
+137 timing metavuln:cache:get:security-advisory:@vercel/fun:Aoh37p7eCwhJnnBldRECcUeBok5yBTwjwAtaoF/HBW3YAYtPnT+hqbe0qILWrk4hMb7m9+yJ+ILUK7jcFfY67A== Completed in 4ms
+138 http fetch GET 200 https://registry.npmjs.org/@vercel%2ffun 1296ms (cache updated)
+139 timing metavuln:packument:@vercel/fun Completed in 1297ms
+140 timing metavuln:load:security-advisory:@vercel/fun:xsfciMtNhQn+Vb692L8h5HEYBYUJ5Lhjy3bF//LOsKSn8tp0f1hbuDX26k9UtKJNPZjM5uuq2Cxlz3KwL19oJg== Completed in 0ms
+141 timing metavuln:calculate:security-advisory:@vercel/fun:xsfciMtNhQn+Vb692L8h5HEYBYUJ5Lhjy3bF//LOsKSn8tp0f1hbuDX26k9UtKJNPZjM5uuq2Cxlz3KwL19oJg== Completed in 1299ms
+142 timing metavuln:cache:get:security-advisory:@vercel/node:bextLhC/NB9CLSx3hJ+Szy5hMbm2W/hurEkVOHuATCTnZOHx4crZtGQZ+RIjG5OUs+QyIM3XtpQtaiNcQFKtfA== Completed in 11ms
+143 timing metavuln:cache:get:security-advisory:@vercel/routing-utils:13nBBmbQBi3cgHw3wZ9uJUeo6OzcSo8oPySxLUQIMaRC60/n8eqm7WzBGAdeRvZ++5op6kqOGg78gLohRdObLA== Completed in 9ms
+144 http fetch GET 200 https://registry.npmjs.org/@vercel%2fnode 1393ms (cache updated)
+145 timing metavuln:packument:@vercel/node Completed in 1399ms
+146 timing metavuln:load:security-advisory:@vercel/node:pLUv/6c+bmHoxEACs0NqtwPmGr+fsz6hhPRCaCxAB7JAEWbfJpZAdRp5wZbakunJd3L0DjKZw9zV2WchUplIJA== Completed in 5ms
+147 timing metavuln:calculate:security-advisory:@vercel/node:pLUv/6c+bmHoxEACs0NqtwPmGr+fsz6hhPRCaCxAB7JAEWbfJpZAdRp5wZbakunJd3L0DjKZw9zV2WchUplIJA== Completed in 1405ms
+148 http fetch GET 200 https://registry.npmjs.org/@vercel%2frouting-utils 1429ms (cache updated)
+149 timing metavuln:packument:@vercel/routing-utils Completed in 1429ms
+150 timing metavuln:load:security-advisory:@vercel/routing-utils:pLUv/6c+bmHoxEACs0NqtwPmGr+fsz6hhPRCaCxAB7JAEWbfJpZAdRp5wZbakunJd3L0DjKZw9zV2WchUplIJA== Completed in 3ms
+151 timing metavuln:calculate:security-advisory:@vercel/routing-utils:pLUv/6c+bmHoxEACs0NqtwPmGr+fsz6hhPRCaCxAB7JAEWbfJpZAdRp5wZbakunJd3L0DjKZw9zV2WchUplIJA== Completed in 1432ms
+152 timing metavuln:cache:get:security-advisory:vercel:+56N1rYxGz7+sQl2+9K9oyvhaeyVn8wM7oJVJB4Qdwl5DA56aM/ngVqxmMGZWUsL5wpGui7TwBwV/MRRp+6JiA== Completed in 5ms
+153 http fetch GET 200 https://registry.npmjs.org/vercel 612ms (cache updated)
+154 timing metavuln:packument:vercel Completed in 651ms
+155 timing metavuln:load:security-advisory:vercel:Aoh37p7eCwhJnnBldRECcUeBok5yBTwjwAtaoF/HBW3YAYtPnT+hqbe0qILWrk4hMb7m9+yJ+ILUK7jcFfY67A== Completed in 8ms
+156 timing metavuln:calculate:security-advisory:vercel:Aoh37p7eCwhJnnBldRECcUeBok5yBTwjwAtaoF/HBW3YAYtPnT+hqbe0qILWrk4hMb7m9+yJ+ILUK7jcFfY67A== Completed in 662ms
+157 timing metavuln:cache:get:security-advisory:vercel:ihqMokoxGxKnYPb3J7s/QJZ/iRW1HYDBdKSp/IvS6C6onx82C4urHeMJf6fkZPG4qcCX5wb71X+lut70M+sflw== Completed in 57ms
+158 timing metavuln:load:security-advisory:vercel:bextLhC/NB9CLSx3hJ+Szy5hMbm2W/hurEkVOHuATCTnZOHx4crZtGQZ+RIjG5OUs+QyIM3XtpQtaiNcQFKtfA== Completed in 6ms
+159 timing metavuln:calculate:security-advisory:vercel:bextLhC/NB9CLSx3hJ+Szy5hMbm2W/hurEkVOHuATCTnZOHx4crZtGQZ+RIjG5OUs+QyIM3XtpQtaiNcQFKtfA== Completed in 63ms
+160 timing metavuln:cache:get:security-advisory:@vercel/gatsby-plugin-vercel-builder:xZ5phc9HNDYO6+5pFf+yH/qIOV2syEWS7M1slql+a235fL6gfjf1H/6e4M+Ty/U7IPt54Ha/FiCnc9U9zBquaA== Completed in 15ms
+161 timing metavuln:cache:get:security-advisory:@vercel/redwood:jGmiLQELVJJudthb1LpEbSPO/ebRlxV5tirPny41fTvWMoLl+2fKmkzgkFnu4ClQT8367YfYijdbLz7+zxzmLg== Completed in 11ms
+162 http fetch GET 200 https://registry.npmjs.org/@vercel%2fredwood 1315ms (cache updated)
+163 timing metavuln:packument:@vercel/redwood Completed in 1317ms
+164 timing metavuln:load:security-advisory:@vercel/redwood:13nBBmbQBi3cgHw3wZ9uJUeo6OzcSo8oPySxLUQIMaRC60/n8eqm7WzBGAdeRvZ++5op6kqOGg78gLohRdObLA== Completed in 4ms
+165 timing metavuln:calculate:security-advisory:@vercel/redwood:13nBBmbQBi3cgHw3wZ9uJUeo6OzcSo8oPySxLUQIMaRC60/n8eqm7WzBGAdeRvZ++5op6kqOGg78gLohRdObLA== Completed in 1321ms
+166 http fetch GET 200 https://registry.npmjs.org/@vercel%2fgatsby-plugin-vercel-builder 1374ms (cache updated)
+167 timing metavuln:packument:@vercel/gatsby-plugin-vercel-builder Completed in 1376ms
+168 timing metavuln:load:security-advisory:@vercel/gatsby-plugin-vercel-builder:13nBBmbQBi3cgHw3wZ9uJUeo6OzcSo8oPySxLUQIMaRC60/n8eqm7WzBGAdeRvZ++5op6kqOGg78gLohRdObLA== Completed in 2ms
+169 timing metavuln:calculate:security-advisory:@vercel/gatsby-plugin-vercel-builder:13nBBmbQBi3cgHw3wZ9uJUeo6OzcSo8oPySxLUQIMaRC60/n8eqm7WzBGAdeRvZ++5op6kqOGg78gLohRdObLA== Completed in 1381ms
+170 timing metavuln:cache:get:security-advisory:vercel:7yLJ6Fb/1XCkRIesC/h/B9fYtP2nU5G2cWKSINVjDXB/XQbf3JaShqo4gfgCMd2hQjg0ARlIltYkQXIFEC/qtA== Completed in 4ms
+171 timing metavuln:load:security-advisory:vercel:jGmiLQELVJJudthb1LpEbSPO/ebRlxV5tirPny41fTvWMoLl+2fKmkzgkFnu4ClQT8367YfYijdbLz7+zxzmLg== Completed in 7ms
+172 timing metavuln:calculate:security-advisory:vercel:jGmiLQELVJJudthb1LpEbSPO/ebRlxV5tirPny41fTvWMoLl+2fKmkzgkFnu4ClQT8367YfYijdbLz7+zxzmLg== Completed in 11ms
+173 timing metavuln:cache:get:security-advisory:@vercel/static-build:Xu74W4ZXwcDLiPPDZX7XZSpbFPTckiWJPEAGi16D+axOiAqbDrhcNGZ3Q3CeiE0pG0V0N+0DJdPyYT8Hv4rcpQ== Completed in 4ms
+174 http fetch GET 200 https://registry.npmjs.org/@vercel%2fstatic-build 1369ms (cache updated)
+175 timing metavuln:packument:@vercel/static-build Completed in 1378ms
+176 timing metavuln:load:security-advisory:@vercel/static-build:xZ5phc9HNDYO6+5pFf+yH/qIOV2syEWS7M1slql+a235fL6gfjf1H/6e4M+Ty/U7IPt54Ha/FiCnc9U9zBquaA== Completed in 0ms
+177 timing metavuln:calculate:security-advisory:@vercel/static-build:xZ5phc9HNDYO6+5pFf+yH/qIOV2syEWS7M1slql+a235fL6gfjf1H/6e4M+Ty/U7IPt54Ha/FiCnc9U9zBquaA== Completed in 1379ms
+178 timing metavuln:cache:get:security-advisory:vercel:gl9SWhDtQ3laffiC3QTnjqLYzwBjAOL2OJDtBRYTWt9Ckl4NDFA2ocSmUIpbsolzWMl2DlJ0fOQwx0FQuCAPVQ== Completed in 2ms
+179 timing metavuln:load:security-advisory:vercel:Xu74W4ZXwcDLiPPDZX7XZSpbFPTckiWJPEAGi16D+axOiAqbDrhcNGZ3Q3CeiE0pG0V0N+0DJdPyYT8Hv4rcpQ== Completed in 5ms
+180 timing metavuln:calculate:security-advisory:vercel:Xu74W4ZXwcDLiPPDZX7XZSpbFPTckiWJPEAGi16D+axOiAqbDrhcNGZ3Q3CeiE0pG0V0N+0DJdPyYT8Hv4rcpQ== Completed in 8ms
+181 timing auditReport:init Completed in 6452ms
+182 timing reify:audit Completed in 6702ms
+183 timing reify Completed in 7558ms
+184 silly ADD node_modules/cors
+185 silly ADD
+186 silly ADD
+187 silly ADD
+188 silly ADD
+189 silly ADD
+190 silly ADD
+191 silly ADD
+192 silly ADD
+193 silly ADD
+194 silly ADD
+195 silly ADD
+196 silly ADD
+197 silly ADD
+198 silly ADD
+199 silly ADD
+200 silly ADD
+201 silly ADD
+202 silly ADD
+203 silly ADD
+204 silly ADD
+205 timing command:i Completed in 7604ms
+206 verbose exit 0
+207 timing npm Completed in 7685ms
+208 info ok
